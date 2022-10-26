@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Change</title>
+  </head>
+  <body>
+    <div class="login">
+      <h2 id="txt">Login</h2>
+      <div class="inputBox">
+        <input type="text" placeholder="Username" />
+      </div>
+      <div class="inputBox">
+        <input type="password" placeholder="Password" />
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Login" id="btn" />
+      </div>
+      <div class="group">
+        <a href="#">Forgot Password</a>
+        <a href="#">SignUp</a>
+      </div>
+    </div>
+
+    <div class="colors">
+      <span
+        class="active"
+        style="--clr: #1dd1a1"
+        onclick="changeColors('#1dd1a1')"
+      ></span>
+      <span style="--clr: #ff6b6b" onclick="changeColors('#ff6b6b')"></span>
+      <span style="--clr: #2e86de" onclick="changeColors('#2e86de')"></span>
+      <span style="--clr: #f368e0" onclick="changeColors('#f368e0')"></span>
+      <span style="--clr: #ff9f43" onclick="changeColors('#ff9f43')"></span>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
